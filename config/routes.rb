@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get("/user_sign_in", { :controller => "users", :action => "new_session_form" })
 
   post("/verify_credentials", { :controller => "users", :action => "authenticate" })
-  
+
   # CREATE
   get("/insert_user_record", {:controller => "users", :action => "create" })
 
@@ -44,7 +44,7 @@ Rails.application.routes.draw do
   # Comment routes
 
   # CREATE
-  get("/insert_comment_record", { :controller => "comments", :action => "create" })
+  post("/insert_comment_record", { :controller => "comments", :action => "create" })
 
   # DELETE
 
